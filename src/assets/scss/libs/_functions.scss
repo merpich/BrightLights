@@ -1,0 +1,23 @@
+/*
+---- Convert px to % (percent)
+*/
+@function prc($pxOne, $pxTwo) {
+	$result: math.div($pxOne, $pxTwo)  * 100%;
+	@return $result;
+}
+
+/*
+---- Convert px to rem
+*/
+@function rem($px) {
+	$result: math.div($px, 16) + rem;
+	@return $result;
+}
+
+/*
+---- Convert px to em
+*/
+@function em($px) {
+	$result: math.div($px, 16) + em;
+	@return $result;
+}

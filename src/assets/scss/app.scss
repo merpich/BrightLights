@@ -1,0 +1,77 @@
+/*
+---- Require library sass:math
+*/
+@use 'sass:math';
+
+/*
+---- Require libs/_reset.scss
+*/
+@import './libs/reset';
+
+/*
+---- Require libs/_function.scss
+*/
+@import "./libs/functions";
+
+/*
+---- Require libs/_mixin.scss
+*/
+@import "./libs/mixins";
+
+/*
+---- Require libs/_fonts.scss
+*/
+// @import "./libs/fonts";
+
+/*
+---- Require libs/_vars.scss
+*/
+@import "./libs/vars";
+
+/*
+---- Require libs/_vars.scss
+*/
+@import "./libs/iconfont";
+
+
+
+/*
+---- Main settings
+*/
+body {
+	background-color: var(--color-bg);
+	font-family: var(--font-main);
+	color: var(--font-color-main);
+}
+
+$containerWidth: 1110; // Max width
+$containerPadding: 15; // Padding of container
+
+[class*='__container'] {
+	max-width: rem($containerWidth + $containerPadding * 2);
+	margin: 0 auto;
+	padding: 0 rem($containerPadding);
+}
+
+#app {
+	display: grid;
+	grid-template-rows: 1fr auto;
+	height: 100%;
+}
+
+
+
+/*
+---- Require includes/_header.scss
+*/
+@import "./includes/header";
+
+/*
+---- Require includes/_footer.scss
+*/
+@import "./includes/footer";
+
+/*
+---- Require includes/_global.scss
+*/
+@import "./includes/global";

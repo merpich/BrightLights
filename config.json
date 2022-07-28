@@ -1,0 +1,30 @@
+{
+	"path": {
+		"src": {
+			"srcPath": "./src",
+			"html": [
+				"/**/*.html"
+			],
+			"style": [
+				"/assets/scss/app.scss"
+			],
+			"script": [
+				"/assets/js/app.js"
+			],
+			"image": [
+				"/assets/img/**/*.*"
+			],
+			"font": [
+				"/assets/fonts/**/*.*"
+			]
+		},
+		"dist": {
+			"distPath": "./dist",
+			"html": "/",
+			"style": "/assets/css/",
+			"script": "/assets/js/",
+			"image": "/assets/img/",
+			"font": "/assets/fonts/"
+		}
+	}
+}

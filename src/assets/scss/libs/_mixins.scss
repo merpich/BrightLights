@@ -1,0 +1,9 @@
+/*
+---- Media query mixin
+*/
+@mixin media($minmax, $size) {
+	$size: $size + px;
+	@media (#{$minmax}-width: $size) {
+		@content;
+	}
+}
