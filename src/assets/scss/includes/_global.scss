@@ -62,12 +62,46 @@
 		align-items: center;
 		height: 27px;
 	}
+	// .intro__button
+	&__button {
+		background: transparent;
+		border: 0;
+		font-size: rem(22);
+		color: var(--color-light);
+	}
+	// .intro__bar
+	&__bar {
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			left: prc(68, 880);
+			width: rem(2);
+			height: rem(20);
+			background: var(--color-accent);
+		}
+	}
 	// .intro__line
 	&__line {
+		position: relative;
 		flex-grow: 1;
 		height: rem(2);
 		border: 0;
 		background: var(--color-light);
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: prc(70, 880);
+			height: 100%;
+			background: var(--color-accent);
+		}
 	}
 	// .intro__time
 	&__time {
