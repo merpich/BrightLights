@@ -42,6 +42,9 @@ body {
 	background-color: var(--color-bg);
 	font-family: var(--font-main);
 	color: var(--font-color-main);
+	&.is-lock {
+		overflow: hidden;
+	}
 }
 
 $containerWidth: 1110; // Max width
