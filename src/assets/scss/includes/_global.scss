@@ -133,7 +133,7 @@
 	// .news__inner
 	&__inner {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(rem(250), 1fr));
 		gap: rem(30);
 	}
 	// .news__card
@@ -161,5 +161,106 @@
 		border-radius: rem(20) 0;
 		font-size: rem(16);
 		font-weight: 500;
+	}
+}
+
+.about {
+	padding: rem(90) 0 rem(45);
+	@include media('min', 768) {
+		padding: rem(180) 0 rem(90);
+	}
+	// .about__inner
+	&__inner {
+		display: grid;
+		gap: rem(50) rem(125);
+		@include media('min', 992) {
+			grid-template-columns: 5fr 4fr;
+		}
+	}
+	// .about__title
+	&__title {
+		margin: 0 0 rem(30) 0;
+		padding: 0 0 0 rem(74);
+		background: url('../img/icons/title.svg') no-repeat left center;
+		font-size: rem(30);
+		@include media('min', 576) {
+			font-size: rem(40);
+		}
+		@include media('min', 768) {
+			margin: 0 0 rem(60) 0;
+			padding: 0 0 0 rem(94);
+			font-size: rem(48);
+		}
+	}
+	// .about__text
+	&__text {
+		margin: 0 0 rem(50) 0;
+		color: rgba($color: #ffffff, $alpha:0.7);
+		@include media('min', 1130) {
+			margin: 0 0 rem(100) 0;
+		}
+	}
+	// .about__list
+	&__list {
+		display: grid;
+		gap: rem(30) rem(40);
+		@include media('min', 768) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include media('min', 992) {
+			grid-template-columns: repeat(auto-fit, minmax(rem(250), 1fr));
+		}
+	}
+	// .about__item
+	&__item {
+		position: relative;
+		padding: 0 0 0 rem(50);
+		font-size: rem(18);
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: rem(30);
+			height: rem(30);
+			top: rem(-1);
+			left: 0;
+			border-radius: rem(10) 0;
+			background: var(--color-accent);
+		}
+	}
+	// .about__photos
+	&__photos {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		@include media('min', 992) {
+			justify-content: flex-end;
+		}
+	}
+	// .about__image
+	&__image {
+		width: 100%;
+		height: rem(300);
+		margin: rem(125) 0 0 0;
+		object-fit: cover;
+		border-radius: rem(20) 0;
+		opacity: 0.3;
+		transform: translate(0, 0);
+		transition: all 0.3s ease 0s;
+		cursor: pointer;
+		@include media('min', 425) {
+			width: rem(350);
+			height: rem(400);
+		}
+		&.is-active {
+			position: absolute;
+			z-index: 5;
+			transform: translate(0, rem(-95));
+			opacity: 1;
+			cursor: default;
+			@include media('min', 576) {
+				transform: translate(rem(-95), rem(-65));
+			}
+		}
 	}
 }

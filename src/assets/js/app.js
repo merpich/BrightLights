@@ -23,3 +23,20 @@ window.addEventListener('scroll', () => {
 		headerInner.classList.remove('is-scroll');
 	}
 });
+
+
+const aboutImage = document.querySelectorAll('.about__image');
+
+aboutImage.forEach((image) => {
+	image.addEventListener('click', () => {
+		if (image.classList.entries('is-active')) {
+			aboutImage.forEach((image) => {
+				if (image.classList.contains('is-active')) {
+					image.classList.remove('is-active');
+				}
+			});
+
+			image.classList.add('is-active');
+		}
+	});
+});
