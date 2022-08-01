@@ -298,6 +298,7 @@
 		margin: 0 0 rem(25) 0;
 		padding: 0 0 rem(25) 0;
 		border-bottom: rem(1) rgba($color: #ffffff, $alpha:0.7) solid;
+		background: url('../img/icons/quotes.svg') no-repeat;
 		font-size: rem(18);
 		@include media('min', 768) {
 			max-width: rem(400);
