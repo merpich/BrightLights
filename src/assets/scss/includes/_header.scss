@@ -109,13 +109,13 @@
 		}
 		&.is-active {
 			& span:nth-child(1) {
-				transform: translate(0, 8px) rotate(45deg);
+				transform: translate(0, rem(8)) rotate(45deg);
 			}
 			& span:nth-child(2) {
 				opacity: 0;
 			}
 			& span:nth-child(3) {
-				transform: translate(0, -8px) rotate(-45deg);
+				transform: translate(0, rem(-8)) rotate(-45deg);
 			}
 		}
 		& span {

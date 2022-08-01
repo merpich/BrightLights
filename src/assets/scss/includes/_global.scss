@@ -43,7 +43,7 @@
 	&__title {
 		margin: 0 0 rem(50) 0;
 		-webkit-text-fill-color: transparent;
-		-webkit-text-stroke: 1px #ffffff;
+		-webkit-text-stroke: rem(1) #ffffff;
 		font-size: rem(50);
 		text-transform: capitalize;
 		text-align: center;
@@ -60,7 +60,7 @@
 		display: flex;
 		column-gap: rem(45);
 		align-items: center;
-		height: 27px;
+		height: rem(27);
 	}
 	// .intro__button
 	&__button {
@@ -161,6 +161,9 @@
 		border-radius: rem(20) 0;
 		font-size: rem(16);
 		font-weight: 500;
+		& span {
+			display: block;
+		}
 	}
 }
 
@@ -243,7 +246,7 @@
 		height: rem(300);
 		margin: rem(125) 0 0 0;
 		object-fit: cover;
-		border-radius: rem(20) 0;
+		border-radius: rem(30) 0;
 		opacity: 0.3;
 		transform: translate(0, 0);
 		transition: all 0.3s ease 0s;
@@ -261,6 +264,77 @@
 			@include media('min', 576) {
 				transform: translate(rem(-95), rem(-65));
 			}
+		}
+	}
+}
+
+.pop {
+	padding: rem(45) 0;
+	@include media('min', 768) {
+		padding: rem(180) 0 rem(90);
+	}
+	// .pop__container
+	&__container {
+		position: relative;
+		padding: rem(45) rem(15);
+		@include media('min', 992) {
+			padding: rem(65) rem(15);
+		}
+		@include media('min', 1140) {
+			padding: rem(85) rem(15);
+		}
+	}
+	// .pop__description
+	&__description {
+		padding: rem(25) rem(40);
+		border: rem(1) var(--color-light) solid;
+		border-radius: rem(30) 0;
+		@include media('min', 992) {
+			padding: rem(50) rem(80);
+		}
+	}
+	// .pop__text
+	&__text {
+		margin: 0 0 rem(25) 0;
+		padding: 0 0 rem(25) 0;
+		border-bottom: rem(1) rgba($color: #ffffff, $alpha:0.7) solid;
+		font-size: rem(18);
+		@include media('min', 768) {
+			max-width: rem(400);
+		}
+		@include media('min', 992) {
+			max-width: rem(520);
+		}
+	}
+	// .pop__link
+	&__link {
+		font-size: rem(18);
+		font-weight: 700;
+		color: var(--color-accent);
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	// .pop__img
+	&__image {
+		display: none;
+		@include media('min', 768) {
+			position: absolute;
+			display: block;
+			max-width: rem(240);
+			height: 100%;
+			top: 0;
+			right: rem(55);
+			border-radius: rem(30) 0;
+			object-fit: cover;
+		}
+		@include media('min', 992) {
+			max-width: rem(300);
+			right: rem(65);
+		}
+		@include media('min', 1140) {
+			max-width: rem(370);
+			right: rem(95);
 		}
 	}
 }
