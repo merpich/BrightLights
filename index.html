@@ -3,40 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="assets/css/app.min.css">
-	<title>Bright Lights</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<title>Bright Lights</title>
 </head>
 <body>
 
 	<div id="app">
 		<header class="header">
 	<div class="header__inner">
-		<a class="header__logo" href="/">
+		<a class="header__logo" href="#">
 			<img src="./assets/img/logo.png" alt="Logotype Bright Lights">
 		</a>
 
 		<nav class="header__nav">
 			<ul class="header__list">
 				<li class="header__item">
-					<a class="header__link" href="">About</a>
+					<a class="header__link" href="#">About</a>
 				</li>
 				<li class="header__item">
-					<a class="header__link" href="">News</a>
+					<a class="header__link" href="#">News</a>
 				</li>
 				<li class="header__item">
-					<a class="header__link" href="">Music</a>
+					<a class="header__link" href="#">Music</a>
 				</li>
 				<li class="header__item">
-					<a class="header__link" href="">Media</a>
+					<a class="header__link" href="#">Media</a>
 				</li>
 				<li class="header__item">
-					<a class="header__link" href="">Tours</a>
+					<a class="header__link" href="#">Tours</a>
 				</li>
 				<li class="header__item">
-					<a class="header__link" href="">Contacts</a>
+					<a class="header__link" href="#">Contacts</a>
 				</li>
 			</ul>
 		</nav>
@@ -252,11 +253,70 @@
 		</div>
 	</div>
 
+	<div class="events">
+		<div class="events__container">
+			<div class="events__slider swiper">
+				<div class="events__wrapper swiper-wrapper">
+					<div class="events__slide swiper-slide">
+						<img class="events__image" src="./assets/img/events/01.jpg" alt="Photo">
+						<div class="events__description">
+							<div class="events__text">
+								<p class="events__place">Chandler, AZ</p>
+								<h4 class="events__title">The Park at Wild Horse Pass</h4>
+							</div>
+							<div class="events__contacts">
+								<p class="events__date">Apr 02 2021</p>
+								<a class="events__link" href="#">tickets</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="events__slide swiper-slide">
+						<img class="events__image" src="./assets/img/events/02.jpg" alt="Photo">
+						<div class="events__description">
+							<div class="events__text">
+								<p class="events__place">Ibiza, IBZ</p>
+								<h4 class="events__title">Swag Ibiza Club</h4>
+							</div>
+							<div class="events__contacts">
+								<p class="events__date">Jul 08 2021</p>
+								<a class="events__link" href="#">tickets</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="events__slide swiper-slide">
+						<img class="events__image" src="./assets/img/events/03.jpg" alt="Photo">
+						<div class="events__description">
+							<div class="events__text">
+								<p class="events__place">Ibiza, IBZ</p>
+								<h4 class="events__title">El Swing Ibiza</h4>
+							</div>
+							<div class="events__contacts">
+								<p class="events__date">Jul 10 2021</p>
+								<a class="events__link" href="#">tickets</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="events__navigation">
+			<button class="events__button events__button_prev">
+				<i class="events__icon icon-arrow"></i>
+			</button>
+			<button class="events__button events__button_next">
+				<i class="events__icon icon-arrow"></i>
+			</button>
+		</div>
+	</div>
+
 		</main>
 
 		<footer class="footer">
 	<div class="footer__inner">
-		<a class="footer__logo" href="/">
+		<a class="footer__logo" href="#">
 			<img src="./assets/img/logo.png" alt="Логотип Bright Lights">
 		</a>
 
@@ -273,24 +333,24 @@
 
 		<div class="footer__social">
 			<div class="footer__col">
-				<a class="footer__icon" href="">
+				<a class="footer__icon" href="https://www.apple.com/itunes/" target="_blank">
 					<i class="icon-apple"></i>
 				</a>
-				<a class="footer__icon" href="">
+				<a class="footer__icon" href="https://www.spotify.com/" target="_blank">
 					<i class="icon-spotify"></i>
 				</a>
-				<!-- <a class="footer__icon" href="">
+				<!-- <a class="footer__icon" href="https://www.instagram.com" target="_blank">
 					<i class="icon-instagram"></i>
 				</a> -->
 			</div>
 			<div class="footer__col">
-				<a class="footer__icon" href="">
+				<a class="footer__icon" href="https://www.youtube.com/" target="_blank">
 					<i class="icon-youtube"></i>
 				</a>
-				<a class="footer__icon" href="">
+				<!-- <a class="footer__icon" href="https://www.twitter.com" target="_blank">
 					<i class="icon-twitter"></i>
-				</a>
-				<!-- <a class="footer__icon" href="">
+				</a> -->
+				<!-- <a class="footer__icon" href="https://www.facebook.com" target="_blank">
 					<i class="icon-facebook"></i>
 				</a> -->
 			</div>
@@ -302,6 +362,7 @@
 
 	</div>
 
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="assets/js/app.min.js"></script>
 </body>
 </html>
