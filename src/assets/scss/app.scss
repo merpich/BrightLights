@@ -39,9 +39,9 @@
 ---- Main settings
 */
 body {
-	background-color: var(--color-bg);
+	background-color: var(--color-bg-primary);
 	font-family: var(--font-main);
-	color: var(--font-color-main);
+	color: var(--color-font-primary);
 	&.is-lock {
 		overflow: hidden;
 	}
@@ -58,7 +58,7 @@ $containerPadding: 15; // Padding of container
 
 #app {
 	display: grid;
-	grid-template-rows: 1fr auto;
+	grid-template-rows: 1fr auto 1fr;
 	height: 100%;
 }
 
