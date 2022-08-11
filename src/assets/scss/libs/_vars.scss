@@ -3,11 +3,14 @@
 	--font-main: 'Poppins', sans-serif;
 
 	// colors
-	--color-bg: #1C1B21;
-	--color-accent: #7A66CC;
-	--color-light: #ffffff;
-	--font-color-main: #ffffff;
+	--color-bg-primary: #1c1b21;
+	--color-bg-slide: #2f2b2b;
+	--color-accent-primary: #7a66cc;
+	--color-accent-secondary: rgba(122, 102, 204, 0.3);;
+	--color-accent-fade: rgba(122, 102, 204, 0.7);
+	--color-white: #ffffff;
+	--color-white-delimiter: rgba(255, 255, 255, 0.5);
+	--color-white-fade: rgba(255, 255, 255, 0.1);
+	--color-font-main: #ffffff;
+	--color-icon-bg: #2c2c2c;
 }
-
-// scss vars
-$color-accent: #7A66CC;
