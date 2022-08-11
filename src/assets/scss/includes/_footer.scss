@@ -70,7 +70,7 @@
 		width: rem(60);
 		height: rem(60);
 		border-radius: 50%;
-		background: #2C2C2C;
+		background: var(--color-icon-bg);
 		font-size: rem(24);
 		color: inherit;
 		&::after {
@@ -80,7 +80,7 @@
 			width: rem(44);
 			height: rem(44);
 			border-radius: 50%;
-			background: var(--color-accent);
+			background: var(--color-accent-primary);
 		}
 		& i {
 			position: relative;
@@ -98,6 +98,6 @@
 		font-size: rem(14);
 		text-transform: uppercase;
 		text-align: center;
-		color: rgba($color: #ffffff, $alpha: 0.5);
+		color: var(--color-white-delimiter);
 	}
 }
